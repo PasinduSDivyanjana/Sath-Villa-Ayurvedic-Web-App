@@ -1,0 +1,130 @@
+/* Products Page */
+.products-page {
+  max-width: 1200px; /* keeps content centered */
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.page-title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #2c3e50;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;                /* More space between cards */
+  justify-items: center;    /* Center cards inside grid cells */
+  margin: 0 auto;           /* Center the grid itself */
+  max-width: 1000px; 
+
+/* Product Page */
+}.product-card {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease;
+  width: 300px;
+  margin: 16px;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.product-details {
+  padding: 16px;
+}
+
+.product-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #2e7d32;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;      /* allow max 2 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-height: 40px;           /* keeps height consistent */
+  line-height: 1.2rem;        /* good spacing for two lines */
+}
+
+.product-category {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.product-description {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;   /* show 3 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-height: 40px;
+}
+
+.product-meta {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+}
+
+.product-price {
+  font-weight: bold;
+  color: #d32f2f;
+}
+
+.product-stock.in-stock {
+  color: #388e3c;
+}
+
+.product-stock.out-stock {
+  color: #d32f2f;
+}
+
+.product-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: background 0.2s ease;
+}
+
+.update-btn {
+  background: #0288d1;
+  color: white;
+}
+
+.update-btn:hover {
+  background: #0277bd;
+}
+
+.delete-btn {
+  background: #d32f2f;
+  color: white;
+}
+
+.delete-btn:hover {
+  background: #b71c1c;
+}

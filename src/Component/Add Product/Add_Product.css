@@ -1,0 +1,73 @@
+/* Container */
+.form-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 128, 0, 0.15);
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Title */
+.form-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1b5e20; /* dark green */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Form layout */
+.product-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Labels */
+.product-form label {
+  margin: 10px 0 5px;
+  font-weight: 500;
+  color: #2e7d32;
+}
+
+/* Inputs */
+.product-form input,
+.product-form textarea,
+.product-form select {
+  padding: 10px;
+  border: 1px solid #c8e6c9;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.product-form input:focus,
+.product-form textarea:focus,
+.product-form select:focus {
+  border-color: #388e3c; /* green */
+  box-shadow: 0 0 6px rgba(56, 142, 60, 0.3);
+}
+
+/* Submit Button */
+.submit-btn {
+  margin-top: 20px;
+  padding: 12px;
+  background: #2e7d32;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: #1b5e20;
+}
+
+
+
+
